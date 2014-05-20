@@ -105,7 +105,7 @@ public class TutorialOverlayHelper {
      * @param colorResource the resource of the color.
      * @return the helper.
      */
-    public TutorialOverlayHelper setBackgroundColor(int colorResource) {
+    public TutorialOverlayHelper setBackgroundColorResource(int colorResource) {
         return setBackgroundDrawable(new ColorDrawable(mContext.getResources().getColor(colorResource)));
     }
 

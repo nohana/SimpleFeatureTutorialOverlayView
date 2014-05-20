@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         mTutorial = new TutorialOverlayHelper(this, "sample")
-                .setBackgroundColor(R.color.popup_background)
+                .setBackgroundColorResource(R.color.popup_background)
                 .setFocusable(true)
                 .setTouchable(true)
                 .setOutsideTouchable(true)
