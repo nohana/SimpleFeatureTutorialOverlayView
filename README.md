@@ -26,7 +26,7 @@ public class MyApp extends Application {
 }
 ```
 
-### 2. Configure overlay tutorial popup with `TutorialOverlayHelper`
+### 2. Configure tutorial overlay with `TutorialOverlayHelper`
 
 ```java
 public class MyActivity extends Activity {
@@ -47,6 +47,13 @@ public class MyActivity extends Activity {
 ```
 
 That's it!
+The tutorial overlay will be displayed under DecorView of your application.
+
+## Download
+
+### Gradle
+
+
 
 ## License
 
