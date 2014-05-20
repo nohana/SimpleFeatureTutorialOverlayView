@@ -53,7 +53,13 @@ The tutorial overlay will be displayed under DecorView of your application.
 
 ### Gradle
 
+Add dependency on your project.
 
+```
+dependencies {
+    compile 'jp.co.nohana:SimpleFeatureTutorialOverlayView:1.0.0'
+}
+```
 
 ## License
 
