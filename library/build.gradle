@@ -1,9 +1,9 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 apply from: 'https://raw.githubusercontent.com/googolmo/gradle-mvn-push/master/gradle-mvn-push.gradle'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "20.0.0"
 
     defaultConfig {
         minSdkVersion 9
@@ -18,14 +18,14 @@ dependencies {
     compile 'com.android.support:support-annotations:+'
 }
 
-android.libraryVariants.all { variant ->
-    def name = variant.buildType.name
-
-    // Only attach a jar for non-debug build types.
-    if (!name.equals(com.android.builder.BuilderConstants.DEBUG)) {
-        def task = project.tasks.create "jar${name.capitalize()}", Jar
-        task.dependsOn variant.javaCompile
-        task.from variant.javaCompile.destinationDir
-        artifacts.add('archives', task);
-    }
-}
+//android.libraryVariants.all { variant ->
+//    def name = variant.buildType.name
+//
+//    // Only attach a jar for non-debug build types.
+//    if (!name.equals(com.android.builder.BuilderConstants.DEBUG)) {
+//        def task = project.tasks.create "jar${name.capitalize()}", Jar
+//        task.dependsOn variant.javaCompile
+//        task.from variant.javaCompile.destinationDir
+//        artifacts.add('archives', task);
+//    }
+//}
